@@ -53,6 +53,8 @@ public class ChronoActivity3 extends AppCompatActivity {
             }
         };
 
+        mLiveDataTimerViewModel.getElapsedTime().observe(this, elapsedTimeObserver);
         //TODO: observe the ViewModel's elapsed time
+
     }
 }
